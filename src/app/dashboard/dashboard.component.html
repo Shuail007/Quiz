@@ -1,0 +1,46 @@
+<mat-toolbar class="header">Cricket Trivia</mat-toolbar>
+
+<div class="Section1" *ngIf="Section1">
+    <mat-card class="Question_card">
+        <form (submit)="onSubmit()" [formGroup]="angForm"  novalidate >
+            <mat-list class="dashboard-list" *ngFor="let data of assets; let i = index">
+                <mat-list-item class="question">
+                    <div>{{data.Question
+                        
+                    }}</div>
+                </mat-list-item>
+                <div class="form-group">
+                    <mat-form-field class="Selector">
+                        <mat-select placeholder="Options" name="select" [(value)]="selectedPet[i]" class="form-control" formControlName="name">
+                            <mat-option value="1">{{data.Option1}}</mat-option>
+                            <mat-option value="2">{{data.Option2}}</mat-option>
+                            <mat-option value="3">{{data.Option3}}</mat-option>
+                            <mat-option value="4">{{data.Option4}}</mat-option>
+                        </mat-select>
+                        <div *ngIf="angForm.controls['name'].invalid && (angForm.controls['name'].dirty || angForm.controls['name'].touched)" class="alert alert-danger">
+                            <div style="margin-left: 8%;color: red;" *ngIf="angForm.controls['name'].errors.required">
+                            Select the option.
+                        </div>
+                        </div>
+                    </mat-form-field>
+                </div>
+            </mat-list>
+
+            <div class="controlButton">
+                <button type="button" data-role="none" style="padding: 5px 36px;font-size: 14px;font-weight: bold;" (click)="Clearform()">Clear</button>&nbsp;&nbsp;&nbsp;
+                <button style="padding: 5px 36px;font-size: 14px;font-weight: bold;" type="submit" [disabled]="angForm.pristine || angForm.invalid"  class="btn btn-success">Add</button>
+            </div>
+
+        </form>
+    </mat-card>
+</div>
+
+<div class="Section2" *ngIf="Section2">
+    <div>
+        <canvas baseChart [chartType]="'bar'" [datasets]="chartData" [labels]="labels" [options]="chartOptions" [legend]="true" [colors]="colors" (chartClick)="onChartClick($event)">
+        </canvas>
+    </div>
+    <div class="controlButton">
+            <button type="button" data-role="none" style="padding: 5px 36px;font-size: 14px;font-weight: bold;" (click)="Clear()">Clear</button>
+        </div>
+</div>

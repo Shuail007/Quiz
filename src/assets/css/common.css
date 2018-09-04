@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Helvetica LT Std';
+    src: url('../fonts/HelveticaLTStd-Light.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: 'Helvetica LT Std', Arial, sans-serif !important;
+ /* background-size: cover;
+  background-repeat: no-repeat;*/
+	margin: 0 !important;
+	padding:0 !important;
+
+}

@@ -1,0 +1,38 @@
+.header{
+    background-color: black;
+    color:wheat;
+}
+.Question_card{
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 2vh;
+}
+.subheader{
+    width: 100%;
+    background: black;
+}
+.dashboard-list {
+    padding: 0 !important;
+    margin: 10px !important;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.32);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.32);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.32);
+}
+.question{
+    color: black !important;
+    font-size: 15px !important;
+    margin-left:3%;
+    padding:0 !important;
+    height: 30px !important;
+    font-weight: bold;
+}
+
+.Selector{
+    margin-left: 10%;
+    width:75%;
+}
+
+
+.controlButton {
+    text-align: center;
+}

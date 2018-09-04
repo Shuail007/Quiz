@@ -1,0 +1,37 @@
+[{
+    "ID": "001",
+    "Question": "When was the last time india won the cricket World Cup ?",
+    "Ans1": "1",
+    "Option1": "2011",
+    "Option2": "1983",
+    "Option3": "1993",
+    "Option4": "2007"
+},
+{
+    "ID": "002",
+    "Question": "What is the highest score by a batsman in Test Cricket ?",
+    "Ans2": "3",
+    "Option1": "301",
+    "Option2": "286",
+    "Option3": "400",
+    "Option4": "300"
+},
+{
+    "ID": "003",
+    "Question": "Who has won the most number of Cricket World Cups ?",
+    "Ans3": "4",
+    "Option1": "Bangladesh",
+    "Option2": "SriLanka",
+    "Option3": "India",
+    "Option4": "Australia "
+    
+},
+{
+    "ID": "004",
+    "Question": "How many international centuries has Tendulkar scored ?",
+    "Ans4": "2" ,
+    "Option1": "56",
+    "Option2": "53",
+    "Option3": "49",
+    "Option4": "46"
+}]
